@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <!---<title> Responsive Registration Form | </title>--->
+    <link rel="stylesheet" href="css.css">
+     <meta name="viewport" content="width=device-width, initial-scale=5.0">
+     <style>body{
+  background-image: url('data:image/jpeg;base64,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');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+     </style>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Webinar Registration</div>
+    <div class="content">
+     <form action=""> 
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+  <input type="radio" name="gender" id="dot-2">
+          
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+</label><label for="dot-2"><br>
+     <span class="dot two"></span><span class="gender">Female</span>
+          </label>
+          <label>
+            </label>
+          
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+<form>
+ 
